@@ -30,19 +30,16 @@ if menu_choice == "Investment":
         print(f"R{total_c:.2f}")
 
     else:
-        print("You have entered an invalid option.\n"
-              "Please Enter the word \'Simple\' or \'Compound\'.")
+        print("You have entered an invalid option.\n" "Please Enter the word \'Simple\' or \'Compound\'.")
 
 elif menu_choice == "Bond":
     print("Bond Option: ")
     house_value = float(input("House Value: "))
     i_rate = float(input("Interest Rate: "))
     months = int(input("Years: ")) * 12
-    repayment = house_value * ((i_rate / 100 / 12 * (1 + i_rate / 100 / 12) ** months) / (((1 + i_rate / 100 / 12)
-                                                                                           ** months) - 1))
+    repayment = house_value * ((i_rate / 100 / 12 * (1 + i_rate / 100 / 12) ** months) / (((1 + i_rate / 100 / 12) ** months) - 1))
     print("")
     print(f"R{repayment:.2f} pm for {months} months")
 
 else:
-    print("You have entered an invalid option.\n"
-          "Please Enter \'Investment\' or \'Bond\'.")
+    print("You have entered an invalid option.\n" "Please Enter \'Investment\' or \'Bond\'.")
